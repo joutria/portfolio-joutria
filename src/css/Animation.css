@@ -1,0 +1,26 @@
+.slider:hover::-webkit-scrollbar-thumb {
+  background-color: #454545;
+  border: 3px none #ffffff;
+}
+
+.slider:hover::-webkit-scrollbar-track {
+  background: #a6a6a6;
+}
+
+a:hover {
+  color: violet;
+}
+
+h1:hover {
+  animation: rainbow 2s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: 80px;
+  }
+}

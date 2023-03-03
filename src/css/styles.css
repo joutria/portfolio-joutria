@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.bg-img {
+  position: absolute;
+  position: 0px 0px;
+  min-height: 100%;
+  width: 100%;
+
+  background: rgb(3, 27, 39);
+  background: linear-gradient(
+    0deg,
+    rgba(3, 27, 39, 1) 0%,
+    rgba(7, 18, 20, 1) 48%,
+    rgba(14, 16, 16, 1) 100%
+  );
+  z-index: -1;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* Header styles */
+
+nav {
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 10px;
+  background: linear-gradient(rgba(3, 27, 39, 1) 0%, rgba(7, 18, 20, 1) 48%);
+  z-index: 99;
+}
+
+.regular-menu {
+  list-style-type: none;
+}
+
+.regular-menu > li {
+  display: inline-block;
+}
+
+h1 {
+  background-image: repeating-linear-gradient(
+    to left,
+    red,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.regular-menu > li > a {
+  padding: 0px 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 500ms;
+}
+
+/* Body styles */
+
+section {
+  padding: 20px 5px;
+  min-height: 500px;
+}
+
+.profile {
+  height: 200px;
+  border-radius: 15px;
+}
+
+h3 {
+  margin: 30px 0px;
+  font-size: 2em;
+  width: 70%;
+  max-width: 800px;
+}
+
+.description {
+  font-size: 1.5em;
+  width: 70%;
+  max-width: 700px;
+  margin: 30px 0px;
+}
+
+h2 {
+  padding: 25px 0px;
+}
+
+.card {
+  justify-content: flex-start;
+  height: 300px;
+  min-width: 200px;
+  margin: 0 5px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.card img {
+  border-radius: 15px;
+}
+
+.card p {
+  width: 100%;
+  margin: 15px 0px 0px 0px;
+}
+
+.slider {
+  right: 5px;
+  left: 5px;
+  scrollbar-color: none;
+  overflow: auto;
+  scrollbar-width: auto;
+  scrollbar-color: #454545 #a6a6a6;
+}
+
+.slider::-webkit-scrollbar {
+  width: 10px;
+}
+
+.slider::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+/* Recurrent styles */
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-space {
+  align-items: space-evenly;
+}
+
+.justify-space {
+  justify-content: space-evenly;
+}
+
+.border {
+  border: blanchedalmond solid 1px;
+}
