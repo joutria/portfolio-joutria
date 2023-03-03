@@ -1,26 +1,37 @@
 {
-  "name": "portfolio",
+  "name": "portfolio-joutria",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "main": "src/index.js",
+  "description": "react portfolio joutria",
+  "main": "index.js",
   "dependencies": {
     "@emailjs/browser": "3.10.0",
     "emailjs-com": "3.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-scripts": "4.0.0"
-  },
-  "devDependencies": {
-    "@babel/runtime": "7.13.8",
-    "typescript": "4.1.3"
+    "react-scripts": "^2.1.3"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joutria/portfolio-joutria.git"
+  },
+  "keywords": [
+    "joutria",
+    "portfolio",
+    "web",
+    "development"
+  ],
+  "author": "joutria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joutria/portfolio-joutria/issues"
+  },
+  "homepage": "https://github.com/joutria/portfolio-joutria#readme",
   "browserslist": [
     ">0.2%",
     "not dead",
