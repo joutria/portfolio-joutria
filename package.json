@@ -1,42 +1,30 @@
 {
-  "name": "portfolio-joutria",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "web dev portfolio",
-  "main": "index.js",
-  "scripts": {
-    "test": "test",
-    "start": "react-scripts start"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joutria/portfolio-joutria.git"
-  },
-  "keywords": [
-    "portfolio"
-  ],
-  "author": "joutria",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/joutria/portfolio-joutria/issues"
-  },
-  "homepage": "https://github.com/joutria/portfolio-joutria#readme",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
   "dependencies": {
-    "@emailjs/browser": "^3.10.0",
-    "emailjs": "^4.0.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1"
+    "@emailjs/browser": "3.10.0",
+    "emailjs-com": "3.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-scripts": "4.0.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "devDependencies": {
+    "@babel/runtime": "7.13.8",
+    "typescript": "4.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
