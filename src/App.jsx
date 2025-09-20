@@ -1,20 +1,28 @@
 import "./css/styles.css";
 import "./css/Animation.css";
 import "./css/MediaQuery.css";
-import Header from "./Header";
-import Projects from "./Projects";
-import About from "./About";
-import Contact from "./Contact";
-import BurgerMenu from "./BurgerMenu";
+import "./css/ContactForm.css";
+import Header from "./components/Header";
+import Projects from "./components/Projects";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import BurgerMenu from "./components/BurgerMenu";
+import MyStack from "./components/MyStack";
+import Studies from "./components/Studies";
+import { useState, useEffect } from "react";
 
 export default function App() {
-  const images = [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHN8VZBh3H-DJG7Cp3kfbRDnd7UF932qrhJMVqjA7uJw&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHN8VZBh3H-DJG7Cp3kfbRDnd7UF932qrhJMVqjA7uJw&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHN8VZBh3H-DJG7Cp3kfbRDnd7UF932qrhJMVqjA7uJw&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHN8VZBh3H-DJG7Cp3kfbRDnd7UF932qrhJMVqjA7uJw&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHN8VZBh3H-DJG7Cp3kfbRDnd7UF932qrhJMVqjA7uJw&s"
-  ];
+
+  const [repos, setRepos] = useState([]);
+
+  useEffect(() => {
+    fetch('https://api.github.com/users/joutria/repos')
+      .then(response => response.json())
+      .then(data => setRepos(data))
+      .catch(error => console.error('Error fetching GitHub repos:', error));
+  }, []);
+
+  console.log('GitHub Repos:', repos);
 
   return (
     <div className="App">
@@ -22,7 +30,9 @@ export default function App() {
       <Header />
       <BurgerMenu />
       <About />
-      <Projects images={images} />
+      <MyStack />
+      <Studies />
+      <Projects repos={repos} />
       <Contact />
     </div>
   );

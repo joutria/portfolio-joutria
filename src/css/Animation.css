@@ -11,16 +11,29 @@ a:hover {
   color: violet;
 }
 
-h1:hover {
-  animation: rainbow 2s linear infinite;
+.curriculum:hover {
+  background-color: white;
+  color: black;
 }
 
-@keyframes rainbow {
-  0% {
-    background-position-x: 0px;
-  }
+.tech-list li:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transition: 300ms;
+}
 
-  100% {
-    background-position-x: 80px;
-  }
+.card:hover .links{
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+h3, .profile, .description, .curriculum { 
+  animation-name: name;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes name {
+  0% { opacity: 0%; }
+  100% { opacity: 100%; }
 }
