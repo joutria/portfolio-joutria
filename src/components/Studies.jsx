@@ -4,7 +4,7 @@ export default function Studies() {
             <h2 className="text-gradient">My Studies</h2>
             <ul className="studies-list row flex align-space justify-space row wrap">
                 <li className="flex row wrap align-space justify-space">
-                    <img src="studies/industrialEng.png" />
+                    <img src="studies/industrial.png" />
                     <div className="flex column wrap justify-center">
                         <div className="titles">Industrial Engineer</div>
                         <div className="university">Universidad Tecnológica de Bolívar</div>
